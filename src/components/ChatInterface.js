@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./ChatInterface.css";
+import logo from "../components/Logos/DevonLogo.png"; // Adjust the path based on your actual structure
+
 
 const ChatInterface = () => {
   const [name, setName] = useState("Select Name");
@@ -34,6 +36,7 @@ const ChatInterface = () => {
 
   return (
     <div className="chat-interface" style={{ height }}>
+      <img src={logo} alt="DevOn" className="logo"/>
       {loading ? (
         <div className="loading-spinner"></div>
       ) : (

@@ -82,7 +82,7 @@
     max-width: 100%;
     margin: 10px 0 20px; /* Space below */
     word-wrap: break-word;
-    max-height: 600px; /* Set a max height */
+    max-height: 500px; /* Set a max height */
     overflow-y: auto; /* Enable vertical scrolling */
 }
 

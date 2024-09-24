@@ -37,7 +37,7 @@ const ChatInterface = () => {
       {loading ? (
         <div className="loading-spinner"></div>
       ) : (
-        response && <div className="response-bubble">{response}</div>
+        response && <div className="response-bubble" dangerouslySetInnerHTML={{ __html: response }}></div>
       )}
       <form onSubmit={handleSubmit} className="chat-form">
         <div className="input-group">

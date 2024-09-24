@@ -35,7 +35,7 @@ const ChatInterface = () => {
   return (
     <div className="chat-interface" style={{ height }}>
       {loading ? (
-        <textarea className="loading-spinner"></textarea>
+        <div className="loading-spinner"></div>
       ) : (
         response && <div className="response-bubble">{response}</div>
       )}
